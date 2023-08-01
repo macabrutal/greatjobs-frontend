@@ -33,8 +33,9 @@ class Api {
     }
   }
   
+  //https://www.themuse.com/developers/api/v2
   const api = new Api({
-    url: "https://api.themuse.com/v2",
+    url: "https://www.themuse.com/developers/api/v2",
     headers: {
       "Content-Type": "application/json",
     },

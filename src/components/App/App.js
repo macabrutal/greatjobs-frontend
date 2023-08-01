@@ -40,9 +40,9 @@ function App() {
 
   return (
     <div className="App"> 
-        {/* <Main/> */}
+        <Main/>
 
-    <CurrenInfoContext.Provider value={currentInfo}>
+    {/* <CurrenInfoContext.Provider value={currentInfo}>
     
     <Header/>
 
@@ -60,7 +60,7 @@ function App() {
         </Router>
 
         </CurrenInfoContext.Provider>
-    <Footer/>
+    <Footer/> */}
 
     </div>
   );

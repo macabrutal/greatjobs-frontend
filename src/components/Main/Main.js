@@ -1,5 +1,6 @@
 import React from "react";
 import './Main.css';
+import working from "../../images/working2.svg";
 
 export default function Main() {
 
@@ -10,12 +11,15 @@ export default function Main() {
 
     
     return (
-      <div>
-      <h1>¿Buscas tu trabajo soñado?</h1>
-      <h3>Encuentra tu lugar para desarrollar al máximo tus aptitudes</h3>
-      <img src="ruta-de-la-imagen.png" alt="Imagen de búsqueda de trabajo" />
+      <div className="main">
+
+      <h1 className="main__title">Encuentra tu <span className="main__title-color">trabajo soñado</span> ahora</h1>
+      <h2>Busca nuevas <span className="main__subtitle-color">oportunidades laborales</span>, queremos que trabajes feliz</h2>
+  
+
+      <img className="main__img" src={working} alt="working" />
       {/* Usamos el componente Link de react-router-dom para navegar a Jobs.js */}
-      <button onClick={handleVerTrabajoSonado}>Ver mi trabajo soñado</button>
+      <button className="main__button" onClick={handleVerTrabajoSonado}>Ver mi trabajo soñado</button>
     </div>
     );
   }
