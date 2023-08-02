@@ -1,22 +1,21 @@
-import React from 'react';
+import React from "react";
 
-import { Router, Routes, Route } from 'react-router-dom'; 
+import { Router, Routes, Route } from "react-router-dom";
 
+import Header from "../../components/Header/Header";
+import Main from "../../components/Main/Main";
+import About from "../../components/About/About";
+import Jobs from "../../components/Jobs/Jobs";
+import Footer from "../../components/Footer/Footer";
 
-import Header from '../../components/Header/Header';
-import Main from '../../components/Main/Main';
-import Jobs from '../../components/Jobs/Jobs';
-import Footer from '../../components/Footer/Footer'
-import './App.css';
+import "./App.css";
 
 import api from "../../utils/api";
-import { CurrenInfoContext } from '../../context/CurrenInfoContext';
+import { CurrenInfoContext } from "../../context/CurrenInfoContext";
 
 function App() {
-
   const [jobs, setJobs] = React.useState([]); //estado de trabajos
-  const [currentInfo, setCurrentInfo] = React.useState([]); 
-  
+  const [currentInfo, setCurrentInfo] = React.useState([]);
 
   React.useEffect(() => {
     api
@@ -24,7 +23,7 @@ function App() {
       .then((json) => {
         setJobs(json);
       })
-      .catch((error) => { });
+      .catch((error) => {});
   }, []);
 
   function getJobInfoById(id) {
@@ -33,16 +32,17 @@ function App() {
       .then((json) => {
         setCurrentInfo(json);
       })
-      .catch((error) => { });
+      .catch((error) => {});
   }
 
- 
-
   return (
-    <div className="App"> 
-        <Main/>
+    <div className="App">
+      <Header />
+      <Main />
+      <About />
+      <Footer />
 
-    {/* <CurrenInfoContext.Provider value={currentInfo}>
+      {/* <CurrenInfoContext.Provider value={currentInfo}>
     
     <Header/>
 
@@ -61,10 +61,8 @@ function App() {
 
         </CurrenInfoContext.Provider>
     <Footer/> */}
-
     </div>
   );
 }
 
 export default App;
-

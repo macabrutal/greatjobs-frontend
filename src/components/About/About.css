@@ -1,0 +1,35 @@
+.about__info {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* alinear horizontalmente elemntos */
+  background-color: #222258;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.about__autor {
+  border: 0px none;
+  height: 114px;
+  width: 114px;
+  margin-right: 30px;
+  display: block; /* la imagen sea un elemento en bloque */
+}
+
+.about__autor-content {
+  width: 600px;
+  text-align: start;
+}
+
+.about__abaut {
+  font-size: 22px;
+}
+
+.about__text {
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.about__text-color {
+  color: #98fde9;
+  font-weight: bold;
+}

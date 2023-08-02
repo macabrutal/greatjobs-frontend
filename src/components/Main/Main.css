@@ -1,38 +1,49 @@
-.main{
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
+.main {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.main__title{
-    font-size: 3em;
+.main__title {
+  font-size: 3em;
+  margin: 0 10px;
 }
 
-
-.main__title-color{
-    color: #CCAE62;
+.main__title-color {
+  color: #ccae62;
 }
 
-.main__subtitle-color{
-    color: #7BD3C2;
+.main__subtitl {
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
-.main__img{
-    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
-    max-width: 400px; /* Establece el ancho máximo de la imagen */
-    height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
-    display: block; /* Hace que la imagen sea un elemento en bloque */
-    margin: 0 auto; /* Centra horizontalmente la imagen en su contenedor */
+.main__subtitle-color {
+  color: #7bd3c2;
 }
 
-.main__button{
-    background-color: #CCAE62;
-    color: #30307E;
-    width: 358px;
-    height: 50px;
-    margin: 18px;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
-    font-weight: bold;
+.main__img {
+  width: 40%;
+  max-width: 400px;
+  height: auto; /*  la altura de la imagen se ajusta automáticamente */
+  display: block; /* la imagen sea un elemento en bloque */
+  margin: 10px auto;
+}
+
+.main__button {
+  background-color: #ccae62;
+  color: #30307e;
+  width: 358px;
+  height: 50px;
+  margin: 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main__button:hover {
+  background-color: #a88f4f;
+  color: #fff;
 }

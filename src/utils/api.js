@@ -1,45 +1,47 @@
 class Api {
-    constructor({ url, headers }) {
-      this._url = url;
-      this._headers = headers;
-    }
-  
-    // Método para obtener información de un trabajo específico por su ID
-    getJobInfo(id) {
-      return fetch(`${this._url}/jobs/${id}`, {
-        method: "GET",
-        headers: this._headers,
-      }).then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-        // Si el servidor devuelve un error, rechaza la promesa con el mensaje de error
-        return Promise.reject(`Error: ${res.status}`);
-      });
-    }
-  
-    // Método para obtener trabajos iniciales
-    getInitialJobs() {
-      return fetch(`${this._url}/jobs`, {
-        method: "GET",
-        headers: this._headers,
-      }).then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-        // Si el servidor devuelve un error, rechaza la promesa con el mensaje de error
-        return Promise.reject(`Error: ${res.status}`);
-      });
-    }
+  constructor({ url, headers }) {
+    this._url = url;
+    this._headers = headers;
   }
-  
-  //https://www.themuse.com/developers/api/v2
-  const api = new Api({
-    url: "https://www.themuse.com/developers/api/v2",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  
-  export default api;
-  
+
+  // Método para obtener información de un trabajo específico por su ID
+  getJobInfo(id) {
+    return fetch(`${this._url}/jobs/${id}`, {
+      method: "GET",
+      headers: this._headers,
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      // Si el servidor devuelve un error, rechaza la promesa con el mensaje de error
+      return Promise.reject(`Error: ${res.status}`);
+    });
+  }
+
+  // Método para obtener trabajos iniciales
+  getInitialJobs() {
+    return fetch(`${this._url}/jobs`, {
+      method: "GET",
+      headers: this._headers,
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      // Si el servidor devuelve un error, rechaza la promesa con el mensaje de error
+      return Promise.reject(`Error: ${res.status}`);
+    });
+  }
+}
+
+//https://www.themuse.com/developers/api/v2
+
+const api = new Api({
+  url: "https://www.themuse.com/api/public/jobs?page=1",
+  headers: {
+    authorization:
+      "2872ba35cb1e4144c7b02c913ce614f78cc82da3f9f024cb0c88396211496560",
+    "Content-Type": "application/json",
+  },
+});
+
+export default api;
