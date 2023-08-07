@@ -1,0 +1,26 @@
+.data {
+  width: 100%;
+  height: 50%;
+  padding: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.data__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.21;
+  color: #fff;
+  margin-top: 5px;
+  color: #98fde9;
+}
+
+.data_number {
+  font-size: 5em;
+  font-weight: 400;
+  color: #98fde9;
+}

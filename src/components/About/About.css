@@ -33,3 +33,18 @@
   color: #98fde9;
   font-weight: bold;
 }
+
+.about__rectangulo {
+  position: absolute;
+  width: 100%;
+  height: 310px;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000ff;
+  background-image: linear-gradient(180deg, #0000ff 0%, #0000a3 100%);
+}
+
+/* De izq sup, izq inf, der sup, der inf, */
+.about__mascara-rombo {
+  clip-path: polygon(0 13%, 100% 0%, 100% 87%, 0 100%);
+}

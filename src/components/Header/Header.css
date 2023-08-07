@@ -1,13 +1,16 @@
 .header {
-  margin: 36px auto;
+  margin: 0 auto;
   max-width: 880px;
+  padding: 28px;
 }
 
+/* sacar */
 .header__info {
   display: flex;
   justify-content: space-between;
 }
 
+/* sacar */
 .header__logo {
   width: 220px;
   height: 27px;
@@ -18,17 +21,6 @@
   height: 1px;
   border: none;
   background-color: #8f8fbf;
-}
-
-.header__link {
-  font-size: 16px;
-  list-style: none;
-  text-decoration: none;
-  color: #fff;
-}
-
-.header__link:hover {
-  color: #98fde9;
 }
 
 /* MOBILE*/

@@ -7,7 +7,7 @@ export default function About() {
     <div className="about__info">
       <img className="about__autor" src={autor} alt="autor" />
 
-      <div className="about__autor-content">
+      <div className="about__autor-content ">
         <h1 className="about__abaut">Acerca del autor</h1>
         <p className="about__text">
           Soy UI/UX Designer, estudiando{" "}
