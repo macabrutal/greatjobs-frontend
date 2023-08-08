@@ -1,20 +1,7 @@
 .header {
-  margin: 0 auto;
+  margin: 36px auto;
   max-width: 880px;
-  padding: 28px;
-}
-
-/* sacar */
-.header__info {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* sacar */
-.header__logo {
-  width: 220px;
-  height: 27px;
-  margin-bottom: 25px;
+  width: 95%;
 }
 
 .header__line {
@@ -26,6 +13,6 @@
 /* MOBILE*/
 @media screen and (min-width: 5px) and (max-width: 550px) {
   .header {
-    margin-bottom: 38px;
+    max-width: 550px;
   }
 }

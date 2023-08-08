@@ -24,3 +24,25 @@
   font-weight: 400;
   color: #98fde9;
 }
+
+/* TABLET */
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .data_number {
+    font-size: 4em;
+  }
+
+  .data__info {
+    font-size: 18px;
+  }
+}
+
+/* MOBILE */
+@media screen and (min-width: 5px) and (max-width: 320px) {
+  .data_number {
+    font-size: 3em;
+  }
+
+  .data__info {
+    font-size: 16px;
+  }
+}

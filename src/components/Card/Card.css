@@ -1,6 +1,6 @@
 .card {
-  width: 30%;
-  height: 320px;
+  width: 282px;
+  height: 100%;
   border-radius: 10px;
   overflow: hidden;
   background-color: #3d3e82;
@@ -14,7 +14,7 @@
   line-height: 1.21;
   color: #98fde9;
   /* color: #8f8fbf; */
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 
 .card__info-color {
@@ -52,10 +52,23 @@
   color: #fff;
 }
 
+/* TABLET */
+/* @media screen and (min-width: 321px) and (max-width: 768px) {
+  .card {
+    width: 95%;
+    padding: 15px;
+  }
+
+
+} */
+
 /* MOBILE*/
 @media screen and (min-width: 5px) and (max-width: 320px) {
   .card {
-    margin: 0 auto 20px;
-    height: auto;
+    width: 95%;
+  }
+
+  .card__title {
+    padding: 15px;
   }
 }

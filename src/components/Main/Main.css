@@ -2,6 +2,8 @@
   color: #fff;
   text-align: center;
   margin: 0 auto;
+  max-width: 880px;
+  width: 95%;
 }
 
 .main__title {
@@ -29,7 +31,6 @@
   display: block; /* la imagen sea un elemento en bloque */
   margin: 10px auto;
   z-index: 2;
-  /* position: absolute; */
 }
 
 .main__organic {
@@ -105,4 +106,72 @@
 
 .main__data {
   background-color: #3d3e82;
+}
+
+/* TABLET */
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .main__title {
+    font-size: 2.5em;
+  }
+  .main__button {
+    width: 80%;
+  }
+
+  .main__img {
+    width: 60%;
+  }
+
+  .main__organic {
+    right: 26%;
+  }
+
+  .main__organic2 {
+    right: 26%;
+  }
+
+  .main__organic3 {
+    right: 26%;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (min-width: 5px) and (max-width: 320px) {
+  .main {
+    display: block;
+  }
+
+  .main__title {
+    font-size: 2em;
+  }
+
+  .main__img {
+    width: 80%;
+  }
+
+  .main__button {
+    width: 80%;
+  }
+
+  .main__organic {
+    background-image: url(../../images/organic-mobile.png);
+
+    width: 300px;
+    height: 288.46px;
+    right: 3%;
+  }
+
+  .main__organic2 {
+    background-image: url(../../images/organic2-mobile.png);
+    width: 300px;
+    height: 311.48px;
+    right: 3%;
+  }
+
+  .main__organic3 {
+    background-image: url(../../images/organic3-mobile.png);
+    width: 300px;
+    height: 288.46px;
+    right: 3%;
+  }
 }
