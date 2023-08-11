@@ -1,0 +1,18 @@
+.header {
+  margin: 36px auto;
+  max-width: 880px;
+  width: 95%;
+}
+
+.header__line {
+  height: 1px;
+  border: none;
+  background-color: #8f8fbf;
+}
+
+/* MOBILE*/
+@media screen and (min-width: 5px) and (max-width: 550px) {
+  .header {
+    max-width: 550px;
+  }
+}

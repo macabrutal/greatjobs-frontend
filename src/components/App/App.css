@@ -1,23 +1,36 @@
-
-.App  {
-  padding: 45px 0 60px;
-  max-width: 880px;
-  width: 95%;
+.App {
+  width: 100%;
   margin: 0 auto;
 }
 
 /* TABLET */
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .App {
-    padding: 45px 0 60px;
+    padding: 0;
     box-sizing: border-box;
   }
 }
 
 /* MOBILE*/
-@media screen and (min-width: 5px) and (max-width: 550px) {
+@media screen and (min-width: 5px) and (max-width: 320px) {
   .App {
     /* max-width: 320px; */
     padding: 0;
   }
 }
+
+/* no */
+
+/* TABLET */
+/* @media screen and (min-width: 321px) and (max-width: 768px) {
+  .App {
+    padding: 30px 0 40px;
+  }
+} */
+
+/* MOBILE */
+/* @media screen and (max-width: 550px) {
+  .App {
+    padding: 10px 0;
+  }
+} */

@@ -1,0 +1,177 @@
+.main {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 880px;
+  width: 95%;
+}
+
+.main__title {
+  font-size: 3em;
+  margin: 0 10px;
+}
+
+.main__title-color {
+  color: #ccae62;
+}
+
+.main__subtitl {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.main__subtitle-color {
+  color: #7bd3c2;
+}
+
+.main__img {
+  width: 40%;
+  max-width: 400px;
+  height: auto; /*  la altura de la imagen se ajusta automáticamente */
+  display: block; /* la imagen sea un elemento en bloque */
+  margin: 10px auto;
+  z-index: 2;
+}
+
+.main__organic {
+  width: 390px;
+  height: 375px;
+  background-image: url(../../images/organic.png);
+  position: absolute;
+  z-index: -1;
+  top: 247px;
+  right: 37%;
+  opacity: 40%;
+}
+
+.main__organic2 {
+  width: 366px;
+  height: 380px;
+  background-image: url(../../images/organic2.png);
+  position: absolute;
+  z-index: -2;
+  top: 260px;
+  right: 37%;
+  opacity: 80%;
+}
+
+.main__organic3 {
+  width: 375px;
+  height: 390px;
+  background-image: url(../../images/organic3.png);
+  position: absolute;
+  z-index: -3;
+  top: 247px;
+  right: 37%;
+  opacity: 35%;
+}
+
+.main__rotacion {
+  animation: rotation 40s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main__button {
+  background-color: #ccae62;
+  color: #30307e;
+  width: 358px;
+  height: 50px;
+  margin: 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.main__button:hover {
+  background-color: #a88f4f;
+  color: #fff;
+}
+
+.main__button:active {
+  background-color: #7d6436;
+  color: #fff;
+}
+
+.main__data {
+  background-color: #3d3e82;
+}
+
+/* TABLET */
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .main__title {
+    font-size: 2.5em;
+  }
+  .main__button {
+    width: 80%;
+  }
+
+  .main__img {
+    width: 60%;
+  }
+
+  .main__organic {
+    right: 26%;
+  }
+
+  .main__organic2 {
+    right: 26%;
+  }
+
+  .main__organic3 {
+    right: 26%;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (min-width: 5px) and (max-width: 320px) {
+  .main {
+    display: block;
+  }
+
+  .main__title {
+    font-size: 2em;
+  }
+
+  .main__img {
+    width: 80%;
+  }
+
+  .main__button {
+    width: 80%;
+  }
+
+  .main__organic {
+    background-image: url(../../images/organic-mobile.png);
+
+    width: 300px;
+    height: 288.46px;
+    right: 3%;
+  }
+
+  .main__organic2 {
+    background-image: url(../../images/organic2-mobile.png);
+    width: 300px;
+    height: 311.48px;
+    right: 3%;
+  }
+
+  .main__organic3 {
+    background-image: url(../../images/organic3-mobile.png);
+    width: 300px;
+    height: 288.46px;
+    right: 3%;
+  }
+}
